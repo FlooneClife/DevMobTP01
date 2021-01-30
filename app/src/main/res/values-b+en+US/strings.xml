@@ -17,4 +17,5 @@
     <string name="domain">Field of expertise</string>
     <string name="num">Phone number</string>
     <string name="isValidate">Your data has been taken into consideration.</string>
+    <string name="click">Click to see xml version</string>
 </resources>
