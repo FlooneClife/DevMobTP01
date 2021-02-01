@@ -18,4 +18,7 @@
     <string name="num">Numéro de téléphone</string>
     <string name="isValidate">Vos données ont été pris en compte.</string>
     <string name="click">Cliquer pour la version avec xml</string>
+    <string name="confirm">Confirmer ?</string>
+    <string name="yes">Oui</string>
+    <string name="no">Non</string>
 </resources>

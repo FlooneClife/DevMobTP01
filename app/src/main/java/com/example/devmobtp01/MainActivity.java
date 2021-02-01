@@ -1,6 +1,7 @@
     package com.example.devmobtp01;
 
 import android.app.Activity;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.InputType;
@@ -12,7 +13,9 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class MainActivity extends Activity {
+import androidx.appcompat.app.AlertDialog;
+
+    public class MainActivity extends Activity {
 
     private TextView formulaire;
     private EditText name;
@@ -61,7 +64,7 @@ public class MainActivity extends Activity {
         validate.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View arg0) {
-                Toast.makeText(getApplicationContext(),R.string.isValidate, Toast.LENGTH_LONG).show();
+                valider();
             }
         });
 
@@ -87,5 +90,23 @@ public class MainActivity extends Activity {
         setContentView(LL);
 
     }
+
+    private void valider() {
+        AlertDialog.Builder popup = new AlertDialog.Builder(MainActivity.this, R.style.AlertDialogTheme);
+        popup.setMessage(R.string.confirm);
+        popup.setPositiveButton(R.string.yes, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                Toast.makeText(getApplicationContext(), R.string.isValidate, Toast.LENGTH_LONG).show();
+            }
+        });
+        popup.setNegativeButton(R.string.no, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+            }
+        });
+        popup.show();
+    }
+
 
 }

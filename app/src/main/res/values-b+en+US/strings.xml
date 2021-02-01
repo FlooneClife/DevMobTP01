@@ -18,4 +18,8 @@
     <string name="num">Phone number</string>
     <string name="isValidate">Your data has been taken into consideration.</string>
     <string name="click">Click to see xml version</string>
+    <string name="confirm">Are you sure?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
 </resources>
