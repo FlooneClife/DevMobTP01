@@ -21,5 +21,6 @@
     <string name="confirm">Are you sure?</string>
     <string name="yes">Yes</string>
     <string name="no">No</string>
+    <string name="tldr">Your informations</string>
 
 </resources>

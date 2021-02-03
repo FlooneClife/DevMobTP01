@@ -15,7 +15,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AlertDialog;
 
-    public class MainActivity extends Activity {
+public class MainActivity extends Activity {
 
     private TextView formulaire;
     private EditText name;
@@ -97,7 +97,14 @@ import androidx.appcompat.app.AlertDialog;
         popup.setPositiveButton(R.string.yes, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                Toast.makeText(getApplicationContext(), R.string.isValidate, Toast.LENGTH_LONG).show();
+                Intent intent = new Intent(MainActivity.this, AfficherFormulaire.class);
+                intent.putExtra("name", name.getText().toString());
+                intent.putExtra("firstName", firstName.getText().toString());
+                intent.putExtra("age", age.getText().toString());
+                intent.putExtra("skills", domaine.getText().toString());
+                intent.putExtra("phone", phone.getText().toString());
+//                Toast.makeText(getApplicationContext(), R.string.isValidate, Toast.LENGTH_LONG).show();
+                startActivity(intent);
             }
         });
         popup.setNegativeButton(R.string.no, new DialogInterface.OnClickListener() {
@@ -107,6 +114,5 @@ import androidx.appcompat.app.AlertDialog;
         });
         popup.show();
     }
-
 
 }
