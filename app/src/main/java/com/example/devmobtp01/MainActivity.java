@@ -26,6 +26,7 @@ public class MainActivity extends Activity {
     private Button validate;
 
     private Button seeLayout;
+    private Button ex8;
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -78,6 +79,16 @@ public class MainActivity extends Activity {
             }
         });
 
+        ex8 = new Button(this);
+        ex8.setText("Exercice 8");
+        ex8.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View arg0) {
+                Intent next = new Intent(MainActivity.this, com.example.devmobtp01.Exercice8.class);
+                startActivity(next);
+            }
+        });
+
         LL.addView(formulaire);
         LL.addView(name);
         LL.addView(firstName);
@@ -86,6 +97,7 @@ public class MainActivity extends Activity {
         LL.addView(phone);
         LL.addView(validate);
         LL.addView(seeLayout);
+        LL.addView(ex8);
 
         setContentView(LL);
 

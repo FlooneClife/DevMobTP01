@@ -23,4 +23,9 @@
     <string name="no">Non</string>
     <string name="tldr">Vos informations</string>
     <string name="tapNum">Quel numéro appeler?</string>
+    <string name="stationDep">Gare de départ</string>
+    <string name="stationArr">Gare d\'arrivée</string>
+    <string name="saisir">Saisir</string>
+    <string name="result">Résultats</string>
+    <string name="searchStation">Rechercher des horaires</string>
 </resources>

@@ -22,5 +22,10 @@
     <string name="yes">Yes</string>
     <string name="no">No</string>
     <string name="tldr">Your informations</string>
+    <string name="tapNum">Which number to call?</string>
+    <string name="stationDep">Departure station</string>
+    <string name="stationArr">Arrival station</string>
+    <string name="saisir">Type here</string>
+    <string name="result">Results</string>
 
 </resources>
